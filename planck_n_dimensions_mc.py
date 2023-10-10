@@ -92,10 +92,7 @@ ax.set_ylabel(r'$Vu_\omega\Delta\omega [\hbar s^{-1}]$',fontsize=20)
 ax.set_title(r'$3D$ simulation vs theoretical calculation')
 ax.legend(('3D theoretical result','MC simulation'),loc="upper right")
 
-#plt.hist(axis_photon,bins)
-
 anim = FuncAnimation(fig,update, frames=(int)(mc_steps/mc_output), interval=40)
-#plt.show()
 anim.save('movie.mp4')
 
 for i in range((int)(bins)):
